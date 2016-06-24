@@ -26,5 +26,7 @@ Or λ!
 
 ```perl6
 my $twice = λ ($x) { $x * 2 };
+say $twice(0); # still 0
 ```
+
 
