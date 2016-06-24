@@ -2,6 +2,8 @@
 
 All the cool kids are using def to declare methods.  Now you can, too.
 
+[![Build Status](https://travis-ci.org/bduggan/mosdef.svg?branch=master)](https://travis-ci.org/bduggan/mosdef)
+
 ```perl6
 use Slang::Mosdef;
 
