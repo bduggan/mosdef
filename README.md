@@ -31,4 +31,16 @@ my $twice = λ ($x) { $x * 2 };
 say $twice(0); # still 0
 ```
 
-
+Compute 5 factorial using a Y combinator:
+```perl6
+say λ ( &f ) {
+  λ ( \n ) {
+    return f(&f)(n);
+  }
+}(
+  λ ( &g ) {
+    λ ( \n ) {
+        return n==1 ?? 1 !! n * g(&g)(n-1);
+    }
+})(5)
+```
