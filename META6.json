@@ -2,7 +2,7 @@
     "raku" : "6.*",
     "name" : "Slang::Mosdef",
     "author" : "github:bduggan",
-    "version" : "0.0.1",
+    "version" : "0.0.2",
     "description" : "Use def and λ as declarators.",
     "depends" : [ ],
     "provides" : {
