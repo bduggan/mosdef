@@ -2,9 +2,9 @@
 
 All the cool kids are using def to declare methods.  Now you can, too.
 
-[![Build Status](https://travis-ci.org/bduggan/mosdef.svg?branch=master)](https://travis-ci.org/bduggan/mosdef)
+[![Actions Status](https://github.com/bduggan/mosdef/actions/workflows/linux.yml/badge.svg)](https://github.com/bduggan/mosdef/actions/workflows/linux.yml)
 
-```perl6
+```raku
 use Slang::Mosdef;
 
 class Foo {
@@ -19,20 +19,20 @@ class Foo {
 
 You can also use lambda for subs!
 
-```perl6
+```raku
 my $yo = lambda { say 'oy' };
 $yo();
 ```
 
 Or λ!
 
-```perl6
+```raku
 my $twice = λ ($x) { $x * 2 };
 say $twice(0); # still 0
 ```
 
 Compute 5 factorial using a Y combinator:
-```perl6
+```raku
 say λ ( &f ) {
   λ ( \n ) {
     return f(&f)(n);
