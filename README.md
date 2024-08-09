@@ -2,7 +2,7 @@
 
 All the cool kids are using def to declare methods.  Now you can, too.
 
-[![Actions Status](https://github.com/bduggan/mosdef/actions/workflows/linux.yml/badge.svg)](https://github.com/bduggan/mosdef/actions/workflows/linux.yml)
+[![Linux](https://github.com/bduggan/mosdef/actions/workflows/linux.yml/badge.svg)](https://github.com/bduggan/mosdef/actions/workflows/linux.yml)
 
 ```raku
 use Slang::Mosdef;
