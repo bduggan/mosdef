@@ -16,6 +16,9 @@ jobs:
           - ubuntu-latest
         raku-version:
           - 'latest'
+        rakuast:
+          - false
+          - true
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
@@ -25,4 +28,8 @@ jobs:
       - name: Install Dependencies
         run: zef install --deps-only .
       - name: Run Tests
-        run: zef test -v .
+        run: |
+          if [ "${{ matrix.rakuast }}" = "true" ]; then
+            export RAKUDO_RAKUAST=1
+          fi
+          zef test -v .
