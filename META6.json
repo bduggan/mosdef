@@ -2,7 +2,7 @@
     "raku" : "6.*",
     "name" : "Slang::Mosdef",
     "author" : "github:bduggan",
-    "version" : "0.0.2",
+    "version" : "0.0.3",
     "description" : "Use def and λ as declarators.",
     "depends" : [ ],
     "depends" : [ "Slangify:ver<0.0.4+>:auth<zef:lizmat>" ],
